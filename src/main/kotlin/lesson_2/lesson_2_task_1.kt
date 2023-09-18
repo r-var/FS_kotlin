@@ -1,3 +1,5 @@
+package lesson_2
+
 import java.lang.Integer.sum
 
 
