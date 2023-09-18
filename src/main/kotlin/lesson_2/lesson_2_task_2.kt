@@ -1,3 +1,5 @@
+package lesson_2
+
 fun main(){
     val worker = 50
     val salaryWorker = 30000
