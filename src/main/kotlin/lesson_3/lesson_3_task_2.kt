@@ -1,18 +1,21 @@
 package lesson_3
 
-const val PATRONYMIC = "Сергеевна"
-const val NAME = "Татьяна"
 
-fun main () {
+fun main() {
 
-    val surnameMarriage = "Андреева"
-    val ageMarriage = 22
-    val surnameSingle = "Сидорова"
-    val ageSingle = 20
-    println("""
-   До замужества $surnameSingle $NAME $PATRONYMIC $ageSingle лет
-   После замужества $surnameMarriage $NAME $PATRONYMIC $ageMarriage года
-   """)
+    val name = "Татьяна"
+    val patronymic = "Сергеевна"
+    var surname = "Сидорова"
+    var age = 20
+    var fullName = "$surname $name $patronymic $age"
+
+    println(fullName)
+
+    surname = "Андреева"
+    age = 22
+    fullName = "$surname $name $patronymic $age"
+
+    println(fullName)
 
 
 }
