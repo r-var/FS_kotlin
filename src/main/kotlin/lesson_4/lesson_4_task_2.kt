@@ -10,11 +10,17 @@ fun main() {
     val cargoWeightSecond = 50
     val cargoVolumeSecond = 100
 
-    println("Average:${((cargoWeightFirst >= MIN_WEIGHT_AVERAGE) and 
-            (cargoWeightFirst <= MAX_WEIGHT_AVERAGE)) and (VOLUME_AVERAGE != cargoVolumeFirst)}")
-    println("Average:${((cargoWeightSecond >= MIN_WEIGHT_AVERAGE) and 
-            (cargoWeightSecond <= MAX_WEIGHT_AVERAGE)) and (VOLUME_AVERAGE != cargoVolumeSecond)}")
-
-
+    println(
+        "Average:${
+            ((cargoWeightFirst >= MIN_WEIGHT_AVERAGE) and
+                    (cargoWeightFirst <= MAX_WEIGHT_AVERAGE)) and (VOLUME_AVERAGE > cargoVolumeFirst)
+        }"
+    )
+    println(
+        "Average:${
+            ((cargoWeightSecond >= MIN_WEIGHT_AVERAGE) and
+                    (cargoWeightSecond <= MAX_WEIGHT_AVERAGE)) and (VOLUME_AVERAGE > cargoVolumeSecond)
+        }"
+    )
 
 }
