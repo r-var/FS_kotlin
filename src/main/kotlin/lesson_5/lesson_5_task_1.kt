@@ -2,7 +2,10 @@ package lesson_5
 
 fun main() {
 
-    println("Что бы пройти дальше, решите пример 5+2")
+    val numberFirst = 5
+    val numberSecond = 2
+
+    println("Что бы пройти дальше, решите пример $numberFirst+$numberSecond")
 
     val number = readln().toInt()
 
