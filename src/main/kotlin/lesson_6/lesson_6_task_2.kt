@@ -7,11 +7,11 @@ fun main() {
     val timerSecond = readln().toInt()
     var second = 0
 
-    do {
+
+    while (timerSecond >= second) {
         println("Прошло ${second++} секунд")
         Thread.sleep(1000)
-
-    } while (timerSecond >= second)
+    }
 
 
 }
