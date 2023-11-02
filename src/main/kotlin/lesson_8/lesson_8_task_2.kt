@@ -1,24 +1,27 @@
 package lesson_8
 
-fun main(){
-    val arrayOfIngredients: Array<String> = arrayOf("яйца","сахар","соль","молоко","масло","мука")
+fun main() {
+    val arrayOfIngredients: Array<String> = arrayOf("яйца", "сахар", "соль", "молоко", "масло", "мука")
 
     println("Назовите ингредиент")
 
     val enterIngredient = readln()
 
-
-    for(i in arrayOfIngredients){
-        if (i == enterIngredient) {
-            println("Ингредиент $enterIngredient в рецепте есть")
-            break
+    for (i in arrayOfIngredients) {
+        if (enterIngredient == i){
+            println("В списке есть $arrayOfIngredients")
         }
-    }
+        else {
+            println("В списке нет $arrayOfIngredients")
 
-    println ("$enterIngredient не найден")
+        }
+
+    }
 
 
 
 
 
 }
+
+
